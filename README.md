@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 import datetime as dt
 ```
 
-Insert the yahoo finance tickers into the list tickers. You can choose as many as you like.
+Insert the yahoo finance tickers into the variable 'tickers'. You can choose as many as you like.
 ```python
 tickers =['TSLA','AAPL','NFLX','MSFT']
 ```
