@@ -136,11 +136,11 @@ assets_indexrow
 
 
 
-
+insert your desired indexing value below. In this case, it is 100.
 ```python
 #creating indexed price columns
 for ticker in tickers:
-    assets[ticker+'_indexed']=(assets[ticker]/ assets_indexrow[ticker][0])*100 #choose indexing value e.g.100
+    assets[ticker+'_indexed']=(assets[ticker]/ assets_indexrow[ticker][0])*100 
 
 #dropping initial columns from dataframe
 assets.drop(columns =tickers, inplace=True)
