@@ -23,8 +23,9 @@ Choose timeframe.
 ```python
 start=dt.datetime(2019,1,1)
 end= dt.datetime.now()
-
-#pull 'Adj Close' Column and create new dataframe 
+```
+In this example, the 'Adj Close' column is selected. 
+```python 
 assets=yf.download(tickers,start,end)['Adj Close']
 assets.head()
 ```
