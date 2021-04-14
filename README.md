@@ -19,7 +19,7 @@ Insert the yahoo finance tickers into the list tickers. You can choose as many a
 ```python
 tickers =['TSLA','AAPL','NFLX','MSFT']
 ```
-Choose timeframe
+Choose timeframe.
 ```python
 start=dt.datetime(2019,1,1)
 end= dt.datetime.now()
@@ -29,26 +29,11 @@ assets=yf.download(tickers,start,end)['Adj Close']
 assets.head()
 ```
 
-    [*********************100%***********************]  4 of 4 completed
     
 
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -120,20 +105,6 @@ assets_indexrow
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -183,20 +154,6 @@ assets.head()
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -269,7 +226,7 @@ plt.ylabel('Value Change')
 
 
 
-    Text(0, 0.5, 'Value Change')
+ 
 
 
 
