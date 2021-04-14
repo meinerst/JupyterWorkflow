@@ -136,13 +136,15 @@ assets_indexrow
 
 
 
-insert your desired indexing value below. In this case, it is 100.
+New columns are added to the original dataframe with the indexed price developments.
+
+Insert your desired indexing value below. In this case, it is 100.
 ```python
-#creating indexed price columns
 for ticker in tickers:
     assets[ticker+'_indexed']=(assets[ticker]/ assets_indexrow[ticker][0])*100 
-
-#dropping initial columns from dataframe
+```
+The original columns of prices are then dropped
+```python
 assets.drop(columns =tickers, inplace=True)
 ```
 
@@ -213,9 +215,8 @@ assets.head()
 
 
 
-
+Graphing the result.
 ```python
-#indexed returns of assets
 plt.figure(figsize=(14, 7))
 for c in assets.columns.values:
     plt.plot(assets.index, assets[c], lw=3, alpha=0.8,label=c)
