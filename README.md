@@ -1,5 +1,5 @@
 # indexing financial time series (pandas)
-make sure the yfinance package is installed.
+This example uses data pulled from yahoo finance. For this, make sure the yfinance package is installed. This code will also work with dataframes obtained from elsewhere.
 ```python
 #pip install yfinance
 
