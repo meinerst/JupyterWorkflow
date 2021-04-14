@@ -1,5 +1,5 @@
-# JupyterWorkflow
-indexing financial time series (pandas)
+# indexing financial time series (pandas)
+make sure the yfinance package is installed
 ```python
 #pip install yfinance
 
@@ -10,12 +10,12 @@ import matplotlib.pyplot as plt
 import datetime as dt
 ```
 
-
+Insert the yahoo finance tickers into the list tickers. You can choose as many as you like.
 ```python
-#insert yahoo tickers here
 tickers =['TSLA','AAPL','NFLX','MSFT']
-
-#choose timeframe
+```
+Choose timeframe
+```python
 start=dt.datetime(2019,1,1)
 end= dt.datetime.now()
 
@@ -103,10 +103,9 @@ assets.head()
 
 
 
-
+To graph a comparable price development graph the assets data frame needs to be indexed. New columns are added for this purpose.
+First the indexing row is determined. In this case the initial prices.
 ```python
-#to graph a comparable price development graph the assets data frame needs to be indexed. New columns are added for this purpose
-#first the indexing row is determined. In this case the initial prices.
 assets_indexrow=assets[:1]
 assets_indexrow
 ```
