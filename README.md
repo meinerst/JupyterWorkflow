@@ -1,5 +1,8 @@
 # indexing financial time series (pandas)
-This example uses data pulled from yahoo finance. For this, make sure the yfinance package is installed. This code will also work with dataframes obtained from elsewhere.
+
+This example uses data pulled from yahoo finance. If you have a dataframe from elsewhere, go to part 2
+Part 1 (Pulling data)
+For this, make sure the yfinance package is installed. 
 ```python
 #pip install yfinance
 
@@ -103,6 +106,7 @@ assets.head()
 
 
 
+Part 2 (Indexing)
 To graph a comparable price development graph the assets data frame needs to be indexed. New columns are added for this purpose.
 First the indexing row is determined. In this case the initial prices.
 ```python
