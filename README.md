@@ -1,5 +1,5 @@
 # indexing financial time series (pandas)
-make sure the yfinance package is installed
+make sure the yfinance package is installed.
 ```python
 #pip install yfinance
 
