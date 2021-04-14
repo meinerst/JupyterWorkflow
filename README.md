@@ -1,4 +1,4 @@
-# indexing financial time series (pandas)
+# Indexing financial time series (pandas)
 
 This example uses data pulled from yahoo finance. If you have a dataframe from elsewhere, go to part 2.
 
